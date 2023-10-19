@@ -40,5 +40,5 @@ sudo systemctl restart networking
 
 echo "\e[0;91m Please restart the system! \e[0m"
 
-# When you use Linux Dont Panic!
+# When you use Linux don't Panic!
 # Nick Matthews & Pieter Visscher 2023 GPLv3
