@@ -1,4 +1,4 @@
-echo -e "\e[0;96m Please put /24 at the end \e[0m"
+echo "\e[0;96m Please put /24 at the end \e[0m"
 # fetch ip
 read -p 'ip: ' ip
 
@@ -32,4 +32,4 @@ echo '    gateway '$gateway >> /etc/network/interfaces
 # This restarts networking
 sudo systemctl restart networking
 
-echo -e "\e[0;91m Please restart the system! \e[0m"
+echo "\e[0;91m Please restart the system! \e[0m"
