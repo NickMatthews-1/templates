@@ -28,7 +28,7 @@ sed -i 's/dhcp/static/g' /etc/network/interfaces
 
 # delete previous networking if present
 sed -i '/address/d' /etc/network/interfaces
-sed -i 'gateway/d' /etc/network/interfaces
+sed -i '/gateway/d' /etc/network/interfaces
 
 #set ip and gateway 
 echo '	address '$ip >> /etc/network/interfaces
