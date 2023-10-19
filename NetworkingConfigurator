@@ -38,3 +38,5 @@ echo '	gateway '$gateway >> /etc/network/interfaces
 sudo systemctl restart networking
 
 echo "\e[0;91m Please restart the system! \e[0m"
+
+# When you use Linux Dont Panic!
