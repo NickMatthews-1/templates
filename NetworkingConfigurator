@@ -6,6 +6,7 @@ read -p 'ip: ' ip
 #fetch gateway
 read -p 'gateway: ' gateway
 
+
 # This grabs the hostname
 read -p 'hostname: ' host_name
 
