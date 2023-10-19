@@ -1,3 +1,4 @@
+# networks in our network are always 24, but if yours differ, edit acordingly 
 echo "\e[0;96m Please put /24 at the end \e[0m"
 # fetch ip
 read -p 'ip: ' ip
