@@ -20,14 +20,19 @@ sudo rm -f /var/lib/dbus/machine-id
 # This sets up the machine id
 sudo systemd-machine-id-setup
 
+# chancge the hostname of the system in /etc/hosts
 sed -i 's/debian/$host_name/g' /etc/hosts
 
-# This sets the networking to static
+#change the networking to static if set on dhcp
 sed -i 's/dhcp/static/g' /etc/network/interfaces
 
+# delete previous networking if present
+sed -i '/address/d' /etc/network/interfaces
+sed -i 'gateway/d' /etc/network/interfaces
+
 #set ip and gateway 
-echo '    address '$ip >> /etc/network/interfaces
-echo '    gateway '$gateway >> /etc/network/interfaces
+echo '	address '$ip >> /etc/network/interfaces
+echo '	gateway '$gateway >> /etc/network/interfaces
 
 # This restarts networking
 sudo systemctl restart networking
